@@ -83,7 +83,7 @@ for i in range(len(imgs)):
             except:
                 print("---elem not clickable.---")
         else:
-            print("not hibiki no click")
+            print("not $s no click" % animu_grill_name)
     except:
         print("---Error in if statement---")
     if big_images and i%3 == 0:
@@ -97,7 +97,7 @@ for i in range(len(imgs)):
                     request.urlretrieve(src,("%s%s_%s.png" % (animu_grill_name, i, i2)))
                 except:
                     print("---HTML Error---")
-                    print("!!!!TIMEOUT!!!!")
+                    # print("!!!!TIMEOUT!!!!")
     
 
 
