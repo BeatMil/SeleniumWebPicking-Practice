@@ -102,8 +102,6 @@ for i in range(len(imgs)):
     
 
 
-for image in big_images:
-    print(image.get_attribute("src"),"\n")
 
 
 
