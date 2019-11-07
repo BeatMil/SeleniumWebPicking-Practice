@@ -3,5 +3,5 @@ class Bob:
     hp = 200
     attack = "eyaaa!"
 
-p1 = Bob()
-print(p1)
+    def change_name(self, name):
+        self.name = name

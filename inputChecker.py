@@ -1,4 +1,4 @@
-import bob
+from bob import Bob
 # input can be only within an array
 input_choices = ["a","b","c"]
 
@@ -10,9 +10,14 @@ def inputChecker(array, prompt):
             break
     print("Please try again.")
 
-p1 = bob.Bob()
+p1 = Bob()
+p2 = Bob()
 print(p1.name)
-    
+print(p2.name)
+p1.change_name("Jin")
+p2.change_name("BUB")
+print(p1.name)
+print(p2.name)    
     
 
 # inputChecker(input_choices, "PASSWORD: ")
