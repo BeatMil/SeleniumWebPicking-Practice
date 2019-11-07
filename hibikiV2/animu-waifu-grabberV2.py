@@ -2,7 +2,6 @@ from selenium import webdriver
 from urllib import request
 import sys
 import time
-from eventlet.timeout import Timeout
 def freezeQuit():
     user_choice = input('Please click ENTER button to close application')
     if not user_choice:
@@ -66,6 +65,7 @@ print("Amount of links: %d" % src_amount)
 #     print("not hibiki")
 
 big_images = []
+
 for i in range(len(imgs)):
     print("i: %s" % i)
     # print things defensively
