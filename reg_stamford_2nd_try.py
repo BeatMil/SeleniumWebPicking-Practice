@@ -9,7 +9,6 @@ reg_link = "https://reg.stamford.edu"
 browser = webdriver.Chrome()
 browser.get(reg_link)
 imgs = browser.find_elements_by_tag_name("img")
-
 for i in imgs:
     src = i.get_attribute("src")
     if str(src).count("login"):
@@ -31,8 +30,14 @@ print(len(input_tag_elems))
 for i in input_tag_elems:
     print(i.get_attribute("name"))
     if i.get_attribute("name") == "f_uid":
-        i.send
-
+        i.send_keys(username)
+    elif i.get_attribute("name") == "f_pwd":
+        i.send_keys(password)
+        i.submit()
+        break
+# change password page
+# imgs = browser.find_elements_by_tag_name("img")
+browser.find_element_by_xpath("/html/body/table/tbody/tr[1]/td[1]/table/tbody/tr[3]/td/a").click()
 
 
 
