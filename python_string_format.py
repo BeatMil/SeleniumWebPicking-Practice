@@ -5,7 +5,7 @@ fish03 = "fish03"
 
 def inputChecker(array,prompt):
     user_input = input(prompt)
-    is_good = False
+    is_good = False # break loop helper
     for i in array:
         if user_input.lower() == i:
             print("Good")

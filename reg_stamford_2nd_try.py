@@ -39,7 +39,14 @@ for i in input_tag_elems:
 # imgs = browser.find_elements_by_tag_name("img")
 browser.find_element_by_xpath("/html/body/table/tbody/tr[1]/td[1]/table/tbody/tr[3]/td/a").click()
 
-
-
+# Menu page
+tag_imgs = browser.find_elements_by_tag_name("img")
+for img in tag_imgs:
+    src = img.get_attribute("src")
+    if str(src).count("adddrop"):
+        img.click()
+        break
+# Almost at enroll page
+browser.find_element_by_xpath("/html/body/table/tbody/tr[1]/td[3]/table/tbody/tr[4]/td[2]/form/input").click()
 
 freeze_quit()
