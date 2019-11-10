@@ -1,7 +1,5 @@
 from selenium import webdriver
 from urllib import request
-import sys
-import time
 def freezeQuit():
     user_choice = input('Please click ENTER button to close application')
     if not user_choice:
@@ -93,10 +91,10 @@ for i in range(len(imgs)):
             if src:
                 print("requesting!!!")
                 try:
-                    timeout = Timeout(0.2, False)
+                    # timeout = Timeout(0.2, False)
                     request.urlretrieve(src,("%s%s_%s.png" % (animu_grill_name, i, i2)))
                 except:
-                    print("---HTML Error---")
+                    print("---download error---")
                     # print("!!!!TIMEOUT!!!!")
     
 
