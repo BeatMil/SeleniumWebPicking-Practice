@@ -10,10 +10,25 @@ class Solution:
             return False
         else:
             return True
+    
+    def isValid2(s):
+        bracket_amt = s.count("(")
+        bracket_indexs = []
+        for i in range(bracket_amt):
+            if i == 0:
+                bracket_indexs.append(s.index("("))
+            else:
+                bracket_indexs.append(s[bracket_indexs[i-1] + 1:].index("(") + bracket_indexs[i-1] + 1)
+        print(bracket_amt)
+        print(bracket_indexs)
 
 ans1 = "[(((())))]"
 ans2 = "((())"
-ans3 = "(what the fuxk beat?? 'you suck' This dhould me faluse''])"
+ans3 = "(what the fuxk beat?? 'you like animu girls?' This dhould me faluse''])"
+ans4 = ")("
+ans5 = "(0001())"
+ans6 = "0(000000(())"
 
-print(Solution.isValid(ans1))
-print(Solution.isValid(ans3))
+# print(Solution.isValid(ans1))
+# print(Solution.isValid(ans3))
+print(Solution.isValid2(ans6))
