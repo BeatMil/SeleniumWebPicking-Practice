@@ -1,3 +1,4 @@
+# list near index
 class Solution: 
   def getRange(self, arr, target):
     cut_helper = True
