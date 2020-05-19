@@ -4,6 +4,7 @@ import time
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--mute-audio")
 browser = webdriver.Chrome(chrome_options=chrome_options)
+browser.minimize_window()
 browser.get("https://www.youtube.com/watch?v=aRYiLarZPKc")
 while True:
     # try:
