@@ -1,5 +1,6 @@
 from selenium import webdriver
 from urllib import request
+import time
 def freezeQuit():
     user_choice = input('Please click ENTER button to close application')
     if not user_choice:
@@ -63,6 +64,7 @@ print("Amount of links: %d" % src_amount)
 #     print("not hibiki")
 
 big_images = []
+class_name = "n3VNCb" # This class name keep chaing so I have to keep up with it
 
 for i in range(len(imgs)):
     print("i: %s" % i)
@@ -76,7 +78,7 @@ for i in range(len(imgs)):
         if imgs[i].get_attribute("alt") == "Image result for %s" % (animu_grill_name):
             try:
                 imgs[i].click()
-                big_images = browser.find_elements_by_class_name("irc_mi")
+                big_images = browser.find_elements_by_class_name(class_name)
                 print("big_images range: %s" % len(big_images))
             except:
                 print("---elem not clickable.---")

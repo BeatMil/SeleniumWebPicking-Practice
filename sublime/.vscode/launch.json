@@ -10,8 +10,8 @@
             "request": "launch",
             "program": "${file}",
             // "console": "integratedTerminal",
-            // "console": "internalConsole"
-            "console": "externalTerminal"
+            "console": "internalConsole"
+            // "console": "externalTerminal"
         }
     ]
 }
