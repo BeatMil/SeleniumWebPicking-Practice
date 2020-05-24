@@ -25,8 +25,6 @@ while get_monika_status():
     print("Just monika (%s)"%count)
 
 print("ARRRRRRG")
+# comment 01
 
-# print("has_monika: %s"%has_monika)
-# print("There is a file name monika.")
-# print("Do not delete it")
 

@@ -1,12 +1,14 @@
-from selenium import webdriver
 from urllib import request
 import time
+from selenium import webdriver
+
+
 def freezeQuit():
     user_choice = input('Please click ENTER button to close application')
     if not user_choice:
-        print ("ABORTED")
+        print("ABORTED")
         browser.close()
-    else: 
+    else:
         print("don't type!!")
         browser.close()
 

@@ -1,6 +1,7 @@
 from selenium import webdriver
 from time import sleep
 
+
 # class = "p-row js-link "
 my_csgostat_site = "https://csgostats.gg/player/76561197990906124#/matches"
 browser = webdriver.Chrome()
