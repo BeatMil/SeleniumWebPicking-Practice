@@ -8,8 +8,7 @@ import os
 from selenium import webdriver
 from time import sleep
 
-
-keyword = 'nekopara chocola'
+keyword = 'Clannad'
 search_engine = 'https://www.google.com/imghp?hl=en'  # online search engine
 browser = webdriver.Firefox()
 browser.get(search_engine)
