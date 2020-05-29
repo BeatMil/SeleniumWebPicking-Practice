@@ -1,6 +1,5 @@
 from selenium import webdriver
 from time import sleep
-from selenium.webdriver.common.action_chains import ActionChains
 
 google_signin_link = "https://accounts.google.com/signin/v2/identifier?" + \
         "passive=1209600&continue=https%3A%2F%2Fphotos.google.com%2F" + \
